@@ -10,7 +10,7 @@ const issueCount=()=>{
     return res.status === 'Closed'
   })
   if (getItem.length > 0) {
-    issueCount.innerText=`${getClosedItem.length} (${getItem.length})`;
+    issueCount.innerText=`${getItem.length - getClosedItem.length} (${getItem.length})`;
   }
 
 }
